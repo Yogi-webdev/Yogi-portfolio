@@ -12,6 +12,7 @@ const pages = [
 ];
 
 export default defineConfig({
+  base: "./",
   plugins: [react()],
   build: {
     rollupOptions: {

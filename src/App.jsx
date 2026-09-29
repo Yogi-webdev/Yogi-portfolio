@@ -1,10 +1,16 @@
 import { useEffect, useRef, useState } from "react";
+import project1Image from "../image/1.png";
+import project2Image from "../image/2.png";
+import project3Image from "../image/3.png";
+import project4Image from "../image/4.png";
+import project5Image from "../image/5.png";
+import profileImage from "../image/yogi.png";
 
 const projects = {
   "project-5-multi-agent-chatbot": {
     title: "1. E-Commerce Multi-Agent Chatbot Using MCPs",
     githubUrl: "https://github.com/Yogi-webdev/Ecommerce-multiagent-chatbot",
-    image: "image/1.png",
+    image: project1Image,
     overview:
       "This AI-powered e-commerce chatbot uses a multi-agent system where specialized agents handle different tasks, such as product recommendation, order support, and conversational assistance. The project explores MCP (Model Context Protocol) for connecting AI agents to external tools and services, creating a more flexible and scalable intelligent system.",
     features: [
@@ -32,7 +38,7 @@ const projects = {
   "project-4-mail-classification": {
     title: "2. Mail Classification AI Agent",
     githubUrl: "https://github.com/Yogi-webdev/ai-agent-mail",
-    image: "image/2.png",
+    image: project2Image,
     overview:
       "This AI-powered mail classification application uses React and Python to process incoming emails and classify them based on content. The system was designed to support smarter email organization and improve productivity by routing messages into meaningful categories.",
     features: [
@@ -59,7 +65,7 @@ const projects = {
   "project-3-rag-chatbot": {
     title: "3. RAG Chatbot",
     githubUrl: "https://github.com/Yogi-webdev/rag-chatbbot",
-    image: "image/3.png",
+    image: project3Image,
     overview:
       "The RAG chatbot is a retrieval-augmented generation system built in Python that fetches relevant information from a knowledge source and responds with context-aware answers. The project focuses on combining information retrieval with language generation to improve answer quality and relevance.",
     features: [
@@ -85,7 +91,7 @@ const projects = {
   "project-2-ecommerce": {
     title: "4. E-Commerce Website",
     githubUrl: "https://github.com/Yogi-webdev/E-commerce-website",
-    image: "image/4.png",
+    image: project4Image,
     overview:
       "This full-stack e-commerce application was built using ReactJS, Node.js, and MySQL to create a complete online shopping experience. The project focuses on product discovery, product details, cart management, and seamless database-backed operations that mirror real-world e-commerce flows.",
     features: [
@@ -117,7 +123,7 @@ const projects = {
   portfolio: {
     title: "5. Portfolio Website",
     githubUrl: "https://github.com/Yogi-webdev/Yogi-portfolio",
-    image: "image/5.png",
+    image: project5Image,
     overview:
       "This personal portfolio website was built using HTML5 and CSS to present my background, skills, projects, and contact information in a clean and professional layout. It was designed to showcase my work in an accessible way while strengthening my understanding of semantic HTML and structured web design.",
     features: [
@@ -309,7 +315,7 @@ function HomePage() {
         <h2>About Me</h2>
         <div className="about-container">
           <div className="about-image">
-            <img src="image/yogi.png" alt="Yogesh Kumar" />
+            <img src={profileImage} alt="Yogesh Kumar" />
           </div>
           <div className="about-text">
             <p>
@@ -382,35 +388,35 @@ function HomePage() {
               {[
                 [
                   "fa-solid fa-robot",
-                  "image/1.png",
+                  project1Image,
                   "E-Commerce Multi-Agent Chatbot Using MCPs",
                   "project-5-multi-agent-chatbot.html",
                   "1",
                 ],
                 [
                   "fa-solid fa-envelope-open-text",
-                  "image/2.png",
+                  project2Image,
                   "Mail Classification AI Agent",
                   "project-4-mail-classification.html",
                   "2",
                 ],
                 [
                   "fa-solid fa-comments",
-                  "image/3.png",
+                  project3Image,
                   "RAG Chatbot",
                   "project-3-rag-chatbot.html",
                   "3",
                 ],
                 [
                   "fa-solid fa-cart-shopping",
-                  "image/4.png",
+                  project4Image,
                   "E-Commerce Website",
                   "project-2-ecommerce.html",
                   "4",
                 ],
                 [
                   "fa-solid fa-user",
-                  "image/5.png",
+                  project5Image,
                   "Portfolio Website",
                   "portfolio.html",
                   "5",
